@@ -8,4 +8,36 @@ The Hiking Optimization Algorithm: A novel human-based metaheuristic approach.
 https://doi.org/10.1016/j.knosys.2024.111880
 
 #  HOA Algorithm
-HOA is located in the DSO_TPM.m script. It is based on the Two-Process approach. It has 6 inputs, namely: the objective function, Lower Bounds, Upper Bounds, dimension of the decision variables, number of search agents, and the number of run times.
+HOA is located in the HOA_V2.m script. It is based on Tobler's hiking function approach. It has 6 inputs, namely: the objective function, Lower Bounds, Upper Bounds, dimension of the decision variables, number of search agents, and the number of run times. Run the HOA_main.m script 
+
+
+# Inputs
+The major inputs of HOA are the objective function to be optimized and the respective constraints. The objective function and the constraints are stated in the myFitn.m script. In the case of TSP, the objective functions are loaded as separate scripts which may contain the coordinates of the locations/points or a distance matrix.
+
+# Outputs
+The key outputs are the values of the decision variables, convergence curves, cost function, or the path cost and path for TSP. The convergence curves and path are in graphical format. However, the convergence curves may be suppressed as the case may be.
+
+
+# Requirements
+The following are the requirements of DSO
+- MATLAB 2016a and later versions
+- 8GB RAM size
+- 256GB Hard disk size
+- CPU
+The size of the HOA_V2.m script is about 5KB and the HOA_main.m script is about 17KB depending on the objective functions and constraints. The size of all the scripts required to replicate the  results in the paper is about 500kB.
+
+# Design Flow
+After setting the parameters of HOA, the design flow is summarised as follows:
+
+
+# How to use
+- State the objective function and constraints in myFitn.m scripts
+- Go to the HOA_V2.m script and change the DSO tuning params if you so desire. The params are at default values.
+- Go to the HOA_main.m script and set the number of search agents, max. number of iterations, Monte Carlo runs, and the dimension of the problem.
+- Run the HOA_main.m script.
+
+
+# Authors
+- Sunday O. Oladejo: School for Data Science and Computational Thinking, University of Stellenbosch, Stellenbosch, South Africa (e-mail: sunday@sun.ac.za)
+- Stephen O. Ekwe:  Department of Electrical, Electronic, and Computer Engineering, Cape Peninsula University of Technology, Cape Town, South Africa (e-mail: ekwes@cput.ac.za)
+- Seyedali Mirjalili: Centre for Artificial Intelligence Research and Optimisation, Torrens University Australia, Fortitude Valley, Brisbane, QLD 4006, Australia (e-mail: ali.mirjalili@torrens.edu.au)
