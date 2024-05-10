@@ -17,8 +17,8 @@ clear All; clc; close All
 % unimodal, multimodal and composite benchmark functions and evaluate their parameters.
 
 % To test the unimodal and multimodal functions ...uncomment lines 30, 31, 64 and
-% comment lines   35 and 
-% To test composite functions uncomment lines and comment lines 
+% comment lines   35 and 61
+% For composite funcs. uncomment lines 35, 61 & comment lines 30, 31, 64
 % Note that to use this script for other objective functions need a minor
 % tweak
 
